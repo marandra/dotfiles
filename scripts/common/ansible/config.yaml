@@ -4,9 +4,19 @@ packages:
   - llvm
   - python3-pip
   - python-is-python3
-  - vim
-  - less
-
+  - neovim
+  - fish
+  - bat
+  - direnv
+  - dos2unix
+  - duf
+  - eza
+  - fd-find
+  - fzf
+  - jq
+  - ripgrep
+  - tree
+  - zoxide
 brew:
   taps:
     - aws/tap
@@ -27,21 +37,9 @@ brew:
     - telegram
   packages:
     common:
-      - asciinema
-      - asdf
-      - autoconf
-      - automake
-      - awscli
-      - azure-cli
-      - bat
-      - codespell
-      - coreutils
-      - direnv
-      - dos2unix
-      - dust
-      - eza
-      - fd
-      - fzf
+      - lazygit
+      - startship
+    to-review:
       - gh
       - ghq
       - git-delta
@@ -51,38 +49,23 @@ brew:
       - jsonnet
       - k9s
       - kustomize
-      - lazygit
       - lua-language-server
       - p7zip
       - packer
       - pkg-config
       - pre-commit
       - yq
-      - ripgrep
       - sponge
       - terraform-docs
       - tflint
       - tfsec
       - tldr
       - tre-command
-      - tree
       - tree-sitter
       - yamllint
-      - zoxide
-    darwin:
-      - carlocab/personal/unrar
-      - dockutil
-      - switchaudio-osx
-      - ffmpeg
-      - gawk
-      - gnu-getopt
-      - gnu-sed
-      - watch
-      - wget
-      - xz
+    darwin: []
     linux: []
-  packages_from_source:
-    - duf
+  packages_from_source: []
 
 dotfiles:
   repo: 'https://github.com/shmileee/dotfiles'
