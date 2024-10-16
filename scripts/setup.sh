@@ -5,7 +5,7 @@ set -euoE pipefail
 # shellcheck disable=SC2086
 cwd="$(cd "$(dirname ${BASH_SOURCE[0]})" && pwd)"
 
-source="https://github.com/shmileee/dotfiles"
+source="https://github.com/marandra/dotfiles"
 branch="${branch:-master}"
 tarball="$source/tarball/$branch"
 target="/tmp/.dotfiles"
