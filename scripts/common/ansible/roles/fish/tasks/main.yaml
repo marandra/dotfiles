@@ -1,11 +1,5 @@
 ---
 
-- name: "install"
-  community.general.homebrew:
-    name:
-      - 'fish'
-  tags: homebrew
-
 - block:
     - name: "obtain path to fish"
       ansible.builtin.command: which fish
@@ -50,10 +44,10 @@
       retries: 3
       delay: 5
 
-    - name: "install plugins with fisher"
-      ansible.builtin.shell: "source {{ ansible_user_dir }}/.config/fish/functions/fisher.fish; fisher update"
-      args:
-        executable: '{{ fish_path.stdout }}'
-      changed_when: false
+#    - name: "install plugins with fisher"
+#      ansible.builtin.shell: "source {{ ansible_user_dir }}/.config/fish/functions/fisher.fish; fisher update"
+#      args:
+#        executable: '{{ fish_path.stdout }}'
+#      changed_when: false
 
   tags: fish_config
