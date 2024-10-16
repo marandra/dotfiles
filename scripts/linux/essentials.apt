@@ -5,14 +5,4 @@ gpg
 locales
 make
 software-properties-common
-sudo
-
-# Editor
-vim
-
-# Download Manager
 curl
-wget
-
-# Ansible
-ansible
