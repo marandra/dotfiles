@@ -13,7 +13,7 @@ Remember to review the script before running it, as you will need to use `sudo` 
 
 ```bash
 wget https://raw.githubusercontent.com/marandra/dotfiles/refs/heads/master/scripts/setup.sh
-sh setup.sh --all
+bash setup.sh --all
 ```
 
 ## Installation Flow
